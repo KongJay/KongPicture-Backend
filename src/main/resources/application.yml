@@ -7,7 +7,7 @@ spring:
     name: kong-picture-backend
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/jay_picture
+    url: jdbc:mysql://localhost:3306/kong_picture
     username: root
     password: kong0305
 mybatis-plus:
