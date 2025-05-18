@@ -9,7 +9,11 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/kong_picture
     username: root
-    password: kong0305
+    password: 123456
+  # 开放更大的文件上传体积
+  servlet:
+    multipart:
+      max-file-size: 10MB
 mybatis-plus:
   configuration:
     # MyBatis 配置
@@ -32,3 +36,4 @@ knife4j:
         api-rule: package
         api-rule-resources:
           - com.jaychou.kongpicturebackend.controller
+
