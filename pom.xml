@@ -8,7 +8,7 @@
     <name>kong-picture-backend</name>
     <description>kong-picture-backend</description>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.7.6</spring-boot.version>
@@ -28,6 +28,7 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-jsqlparser-4.9</artifactId>
         </dependency>
+
         <!-- 腾讯云 cos 服务 -->
         <dependency>
             <groupId>com.qcloud</groupId>
