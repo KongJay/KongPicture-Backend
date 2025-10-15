@@ -2,10 +2,7 @@ package com.jaychou.kongpicturebackend.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.jaychou.kongpicturebackend.model.dto.picture.PictureQueryRequest;
-import com.jaychou.kongpicturebackend.model.dto.picture.PictureReviewRequest;
-import com.jaychou.kongpicturebackend.model.dto.picture.PictureUploadByBatchRequest;
-import com.jaychou.kongpicturebackend.model.dto.picture.PictureUploadRequest;
+import com.jaychou.kongpicturebackend.model.dto.picture.*;
 import com.jaychou.kongpicturebackend.model.entity.Picture;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.jaychou.kongpicturebackend.model.entity.User;
@@ -64,4 +61,10 @@ public interface PictureService extends IService<Picture> {
 
     @Async
     void clearPictureFile(Picture oldPicture);
+
+    void checkPictureAuth(User loginUser, Picture picture);
+
+    void deletePicture(long pictureId, User loginUser);
+
+    void editPicture(PictureEditRequest pictureEditRequest, User loginUser);
 }

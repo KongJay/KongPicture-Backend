@@ -29,6 +29,10 @@ public class Picture implements Serializable {
      * 简介  
      */
     private String introduction;
+    /**
+     * 空间 id
+     */
+    private Long spaceId;
 
     /**
      * 分类  
