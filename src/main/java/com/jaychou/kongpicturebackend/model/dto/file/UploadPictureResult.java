@@ -3,7 +3,7 @@ package com.jaychou.kongpicturebackend.model.dto.file;
 import lombok.Data;
 
 @Data
-public class UploadPictureResult {  
+public class                                                                                                                                                                                UploadPictureResult {
   
     /**  
      * 图片地址  
@@ -22,9 +22,13 @@ public class UploadPictureResult {
   
     /**  
      * 图片宽度  
-     */  
-    private int picWidth;  
-  
+     */
+    private int picWidth;
+    /**
+     * 缩略图 url
+     */
+    private String thumbnailUrl;
+
     /**  
      * 图片高度  
      */  

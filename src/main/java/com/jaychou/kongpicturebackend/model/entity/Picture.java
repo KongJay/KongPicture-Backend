@@ -74,6 +74,10 @@ public class Picture implements Serializable {
      * 创建时间  
      */
     private Date createTime;
+    /**
+     * 缩略图 url
+     */
+    private String thumbnailUrl;
 
     /**
      * 编辑时间  
