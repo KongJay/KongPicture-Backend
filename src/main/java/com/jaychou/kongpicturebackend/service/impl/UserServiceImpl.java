@@ -14,8 +14,7 @@ import com.jaychou.kongpicturebackend.model.vo.LoginUserVO;
 import com.jaychou.kongpicturebackend.model.vo.UserVO;
 import com.jaychou.kongpicturebackend.service.UserService;
 import com.jaychou.kongpicturebackend.model.entity.User;
-
-;import lombok.extern.slf4j.Slf4j;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;

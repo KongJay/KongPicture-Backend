@@ -13,8 +13,12 @@ public class                                                                    
     /**  
      * 图片名称  
      */  
-    private String picName;  
-  
+    private String picName;
+    /**
+     * 图片主色调
+     */
+    private String picColor;
+
     /**  
      * 文件体积  
      */  

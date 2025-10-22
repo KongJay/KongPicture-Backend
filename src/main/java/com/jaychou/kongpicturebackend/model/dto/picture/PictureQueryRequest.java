@@ -82,7 +82,7 @@ public class PictureQueryRequest extends PageRequest implements Serializable {
     /**
      * 是否只查询 spaceId 为 null 的数据
      */
-    private Boolean nullSpaceId;
+    private boolean nullSpaceId;
 
     /**
      * 审核信息
@@ -93,6 +93,15 @@ public class PictureQueryRequest extends PageRequest implements Serializable {
      * 审核人 id
      */
     private Long reviewerId;
+    /**
+     * 开始编辑时间
+     */
+    private Date startEditTime;
+
+    /**
+     * 结束编辑时间
+     */
+    private Date endEditTime;
 
     /**  
      * 用户 id  

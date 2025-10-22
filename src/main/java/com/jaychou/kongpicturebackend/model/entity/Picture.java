@@ -24,6 +24,10 @@ public class Picture implements Serializable {
      * 图片名称  
      */
     private String name;
+    /**
+     * 图片主色调
+     */
+    private String picColor;
 
     /**
      * 简介  
