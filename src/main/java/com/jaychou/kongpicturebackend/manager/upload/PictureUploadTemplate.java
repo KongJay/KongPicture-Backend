@@ -42,6 +42,9 @@ public abstract class PictureUploadTemplate {
         String originFilename = getOriginFilename(inputSource);  
         String uploadFilename = String.format("%s_%s.%s", DateUtil.formatDate(new Date()), uuid,
                 FileUtil.getSuffix(originFilename));
+        if(uploadFilename.contains("?")){
+            uploadFilename = uploadFilename.split("\\?")[0];
+        }
         String uploadPath = String.format("/%s/%s", uploadPathPrefix, uploadFilename);  
   
         File file = null;
