@@ -18,7 +18,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/kong_picture
     username: root
-    password: 123456
+    password: kong0305
   # 开放更大的文件上传体积
   servlet:
     multipart:
@@ -30,7 +30,7 @@ spring:
     host: 127.0.0.1
     port: 6379
     timeout: 5000
-    password: 123456
+    #password: 123456
 mybatis-plus:
   configuration:
     # MyBatis 配置

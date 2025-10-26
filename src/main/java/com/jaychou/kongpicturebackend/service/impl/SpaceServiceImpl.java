@@ -209,4 +209,5 @@ public class SpaceServiceImpl extends ServiceImpl<SpaceMapper, Space>
             throw new BusinessException(ErrorCode.NO_AUTH_ERROR);
         }
     }
+
 }
